@@ -12,17 +12,19 @@ const useFirebase = () => {
     const auth = getAuth();
 
     // sign in with google button click 
-    const signInWithGoogle = () => {
+    const handleGoogleLogin = () => {
         setIsLoading(true);
         return signInWithPopup(auth, googleProvider)
     };
 
 
     // log out when button click 
-    const logOut = () => {
+    const handleLogOut = () => {
         setIsLoading(true);
         signOut(auth)
-            .then(() => { })
+            .then((result) => {
+                setUser({});
+            })
             .finally(() => setIsLoading(false));
 
     };
@@ -68,14 +70,14 @@ const useFirebase = () => {
     }, [])
 
     return {
-        signInWithGoogle,
+        handleGoogleLogin,
         user,
         setUser,
         isLoading,
         setIsLoading,
         error,
         setError,
-        logOut,
+        handleLogOut,
         handleSubmitForm,
         handleLoginForm,
         handleUpdateProfile
