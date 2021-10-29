@@ -38,7 +38,7 @@ const Login = () => {
 
     return (
         <div>
-            <div className="mx-auto p-5 form-container my-3">
+            <div className="mx-auto form-container my-3">
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <input className="form-control my-3" type="email" {...register("email")} placeholder="Email" />
                     <input className="form-control my-3" type="password" {...register("password", { required: true })} placeholder="password" />
@@ -48,7 +48,7 @@ const Login = () => {
                 <div>
                     <p className="text-white">Create an account <Link to="/register" className="text-decoration-none text-warning">Register</Link></p>
                     <hr className="border border-1 w-25 mx-auto" />
-                    <div className="d-flex justify-content-around align-items-center">
+                    <div className="d-flex justify-content-around align-items-center mt-4">
                         <button className="login-with-btn" onClick={handleLogInWithGoogle}><span><i className="fab fa-google text-primary me-2"></i></span> Google</button>
                         <button className="login-with-btn" ><span><i className="fab fa-google text-primary me-2"></i></span> Git Hub</button>
                     </div>

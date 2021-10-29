@@ -23,14 +23,17 @@ const Header = () => {
                         <li className="nav-item">
                             <NavLink className="nav-link text-dark fw-bold" to="/manages">Manages All</NavLink>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <NavLink className="nav-link text-dark fw-bold" to="/experts">Experts</NavLink>
-                        </li>
-                        <li className="nav-item">
+                        </li> */}
+                        {/* <li className="nav-item">
                             <NavLink className="nav-link text-dark fw-bold" to="/about">About</NavLink>
-                        </li>
-                        <li className="nav-item">
+                        </li> */}
+                        {/* <li className="nav-item">
                             <NavLink className="nav-link text-dark fw-bold" to="/contact">Contact</NavLink>
+                        </li> */}
+                        <li className="nav-item">
+                            <NavLink className="nav-link text-dark fw-bold" to="/addService">Add Service</NavLink>
                         </li>
                     </ul>
                     <div className="d-flex">

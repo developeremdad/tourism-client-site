@@ -10,6 +10,7 @@ import ManageOrders from './Components/PrivatePages/ManageOrders/ManageOrders';
 import MyOrders from './Components/PrivatePages/MyOrders/MyOrders';
 import Footer from './Components/Shared/Footer/Footer';
 import Header from './Components/Shared/Header/Header';
+import AddService from './Components/Login/AddService/AddService.js';
 
 function App() {
   return (
@@ -34,6 +35,10 @@ function App() {
             <ManageOrders />
           </PrivateRoute>
 
+          <PrivateRoute path="/addService">
+            <AddService />
+          </PrivateRoute>
+
           <Route path="/login">
             <Login />
           </Route>
@@ -42,7 +47,7 @@ function App() {
             <NotFound />
           </Route>
         </Switch>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </AuthProvider>
   );
