@@ -3,7 +3,7 @@ import { Card, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Service = (props) => {
-    const { name, img, description, _id, price } = props.service;
+    const { name, img, description, _id, price, place } = props.service;
     return (
         <Col>
             <Card>
@@ -16,7 +16,7 @@ const Service = (props) => {
                         </div>
                     </Card.Title>
                     <Card.Text>{description.slice(0, 100)} <span className="text-warning">read more</span></Card.Text>
-                    <Link to={`/details/${_id}`}> <Button className="w-100">Book Now</Button></Link>
+                    <Link to={`/details/${_id}`}> <Button className="w-100">Tour in {place}</Button></Link>
                 </Card.Body>
             </Card>
         </Col>

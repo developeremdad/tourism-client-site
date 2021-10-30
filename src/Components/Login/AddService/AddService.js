@@ -8,7 +8,7 @@ import addServiceBanner from '../../../images/add-service-banner.jpg';
 const AddService = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        axios.post('http://localhost:5000/services', data)
+        axios.post('https://sheltered-falls-76719.herokuapp.com/services', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Successfully inserted');

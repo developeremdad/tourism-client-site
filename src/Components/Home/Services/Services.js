@@ -22,7 +22,7 @@ const Services = () => {
                                 service={service}
                             />)
                             :
-                            <div className="text-center mt-3"><Spinner animation="border" variant="danger" /></div>
+                            <div className="text-center mt-3 mx-auto mt-5"><Spinner animation="border" variant="danger" /></div>
                     }
                 </Row>
             </div>

@@ -8,13 +8,14 @@ import { Spinner } from 'react-bootstrap';
 const DetailsService = () => {
     const { user } = useAuth();
     const { email, displayName } = user;
-    const status = 'pendding';
+    const status = 'pending';
     const { serviceId } = useParams();
     const [service, setService] = useState({});
     const { img, name, description, place, price } = service;
 
+    // display service details
     useEffect(() => {
-        const url = `http://localhost:5000/details/${serviceId}`;
+        const url = `https://sheltered-falls-76719.herokuapp.com/details/${serviceId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setService(data))
@@ -25,7 +26,7 @@ const DetailsService = () => {
     const onSubmit = data => {
         const { phone, address, shipping, userName } = data;
         const orderInfo = { email, img, name, description, place, price, status, userName, phone, address, shipping };
-        console.log(orderInfo);
+        // console.log(orderInfo);
         axios.post('http://sheltered-falls-76719.herokuapp.com/orders', orderInfo)
             .then(res => {
                 if (res.data.insertedId) {
@@ -69,7 +70,7 @@ const DetailsService = () => {
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <input className="form-control my-3" type="text" value={displayName} {...register("userName")} required placeholder="User Name" />
                         <input className="form-control my-3" type="number" {...register("phone")} required placeholder="Phone" />
-                        <textarea className="form-control my-3" {...register("adress")} required placeholder="Address" />
+                        <textarea className="form-control my-3" {...register("address")} required placeholder="Address" />
                         <select className="form-control my-3" {...register("shipping", { required: true })}>
                             <option value="Urgent 5 Day Tour">Urgent 5 Day Tour</option>
                             <option value="7 Day Tour">7 Day Tour</option>
