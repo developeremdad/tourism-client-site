@@ -28,7 +28,7 @@ const DetailsService = () => {
         axios.post('http://localhost:5000/orders', orderInfo)
             .then(res => {
                 if (res.data.insertedId) {
-                    alert('Successfully inserted');
+                    alert('Order Successfully Added');
                     reset();
                 }
             })
@@ -55,7 +55,7 @@ const DetailsService = () => {
                     <textarea className="form-control my-3" {...register("adress")} required placeholder="Address" />
                     {/* <input className="form-control my-2" type="submit" /> */}
                     <select className="form-control my-3" {...register("shipping", { required: true })}>
-                        <option value="Urgent Delivary">Urgent Delivary</option>
+                        <option value="Urgent Tour">Urgent Tour</option>
                         <option value="Any Time">Any Time</option>
                     </select>
 
