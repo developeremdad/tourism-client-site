@@ -11,6 +11,7 @@ import MyOrders from './Components/PrivatePages/MyOrders/MyOrders';
 import Footer from './Components/Shared/Footer/Footer';
 import Header from './Components/Shared/Header/Header';
 import AddService from './Components/Login/AddService/AddService.js';
+import DetailsService from './Components/Home/DetailsService/DetailsService';
 
 function App() {
   return (
@@ -37,6 +38,10 @@ function App() {
 
           <PrivateRoute path="/addService">
             <AddService />
+          </PrivateRoute>
+
+          <PrivateRoute path="/details/:serviceId">
+            <DetailsService />
           </PrivateRoute>
 
           <Route path="/login">
