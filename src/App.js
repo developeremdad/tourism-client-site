@@ -12,6 +12,7 @@ import Footer from './Components/Shared/Footer/Footer';
 import Header from './Components/Shared/Header/Header';
 import AddService from './Components/Login/AddService/AddService.js';
 import DetailsService from './Components/Home/DetailsService/DetailsService';
+import Contact from './Components/Home/Contact/Contact';
 
 function App() {
   return (
@@ -46,6 +47,10 @@ function App() {
 
           <Route path="/login">
             <Login />
+
+          </Route>
+          <Route path="/contact">
+            <Contact></Contact>
           </Route>
 
           <Route path="*">
