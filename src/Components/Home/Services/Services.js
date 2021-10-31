@@ -11,7 +11,12 @@ const Services = () => {
     }, [])
     return (
         <div>
-            <h1 className="text-center bg-dark py-4 text-white">Our Services</h1>
+            {/* <h1 className="text-center bg-dark py-4 text-white">Packages in Popular Destinations</h1> */}
+
+            <div className="container py-4 text-center my-4">
+                <h1 className="text-danger">FEATURED TOURS</h1>
+                <p>Find your next tour</p>
+            </div>
 
             <div className="container">
                 <Row xs={1} sm={2} md={2} lg={3} className="g-4">

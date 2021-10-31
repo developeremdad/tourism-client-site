@@ -1,10 +1,11 @@
 import React from 'react';
+import BannerSection from '../BannerSection/BannerSection';
 import Services from '../Services/Services';
 
 const Home = () => {
     return (
         <div>
-            {/* <h2>this is home section</h2> */}
+            <BannerSection />
             <Services />
         </div>
     );

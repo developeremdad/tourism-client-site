@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 
 const MyOrder = (props) => {
     const { name, img, price, _id } = props.order;
-
-
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
@@ -16,7 +14,7 @@ const MyOrder = (props) => {
     const handleCancelOrder = id => {
         const proceed = window.confirm('Are you sure! You want to Cancel and  Delete?');
         if (proceed) {
-            const url = `http://localhost:5000/orders/${id}`;
+            const url = `https://sheltered-falls-76719.herokuapp.com/orders/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
