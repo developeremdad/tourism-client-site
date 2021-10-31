@@ -1,4 +1,5 @@
 import React from 'react';
+import './BannerSection.css';
 
 const BannerSection = () => {
     return (
@@ -12,21 +13,21 @@ const BannerSection = () => {
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <img src={`https://i.ibb.co/KmfS7VB/Group-of-man-and-woman-enjoy-camping-picnic-and-barbecue-at-lake-with-tents-in-background-Young-mixe.jpg`} className="d-block w-100 img-fluid" alt="..." />
-                        <div className="carousel-caption d-none d-md-block">
+                        <div className="carousel-caption d-none d-md-block curosal-title">
                             <h1>Adventure, Your Way</h1>
                             <p> matter who you’re looking to travel with, you can depend on our 2,500 trusted operators to make sure everything’s taken care of.</p>
                         </div>
                     </div>
                     <div className="carousel-item">
                         <img src={`https://i.ibb.co/zXHw0NL/banner-1.jpg`} className="d-block w-100" alt="..." />
-                        <div className="carousel-caption d-none d-md-block">
+                        <div className="carousel-caption d-none d-md-block curosal-title">
                             <h1>ADVENTURE AWAITES</h1>
                             <p>Choose from thousands of organised travel adventures.</p>
                         </div>
                     </div>
                     <div className="carousel-item">
                         <img src={`https://i.ibb.co/RYD8Xdc/banner-2.jpg`} className="d-block w-100" alt="..." />
-                        <div className="carousel-caption d-none d-md-block">
+                        <div className="carousel-caption d-none d-md-block curosal-title">
                             <h1>CALL OUR AGENTS TO BOOK</h1>
                             <p>Tripo Award Winning and Top Rated Tour Operator</p>
                         </div>
