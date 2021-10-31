@@ -13,7 +13,7 @@ const ManageOrder = (props) => {
     // update status when click button 
     const handleUpdateStatus = id => {
         const updatedStatus = { status: 'Complete' };
-        const url = `http://localhost:5000/orders/${id}`;
+        const url = `https://sheltered-falls-76719.herokuapp.com/orders/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {

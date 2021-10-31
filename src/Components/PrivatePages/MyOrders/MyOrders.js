@@ -19,7 +19,7 @@ const MyOrders = () => {
     }
 
     return (
-        <div className="bg-light p-5">
+        <div className="bg-light p-5 my-4">
             <div className="container mx-auto row g-4">
                 {
                     orders.map(order => (

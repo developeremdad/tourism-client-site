@@ -18,7 +18,7 @@ const ManageOrders = () => {
     }
     return (
         <div>
-            <div className="bg-light p-5">
+            <div className="bg-light p-5 my-4">
                 {
                     orders.map(order => (
                         <ManageOrder

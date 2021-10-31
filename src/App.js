@@ -8,7 +8,7 @@ import PrivateRoute from './Components/Login/PrivateRoute/PrivateRoute';
 import NotFound from './Components/NotFound/NotFound';
 import ManageOrders from './Components/PrivatePages/ManageOrders/ManageOrders';
 import MyOrders from './Components/PrivatePages/MyOrders/MyOrders';
-// import Footer from './Components/Shared/Footer/Footer';
+import Footer from './Components/Shared/Footer/Footer';
 import Header from './Components/Shared/Header/Header';
 import AddService from './Components/Login/AddService/AddService.js';
 import DetailsService from './Components/Home/DetailsService/DetailsService';
@@ -52,7 +52,7 @@ function App() {
             <NotFound />
           </Route>
         </Switch>
-        {/* <Footer /> */}
+        <Footer />
       </Router>
     </AuthProvider>
   );
