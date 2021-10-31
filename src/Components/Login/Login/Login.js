@@ -46,7 +46,7 @@ const Login = () => {
                     <button className="btn btn-primary w-100 my-2" type="submit">Login</button>
                 </form>
                 <div>
-                    <p className="text-white">Create an account <Link to="/register" className="text-decoration-none text-warning">Register</Link></p>
+                    <p className="text-white">Create an account <Link to="/login" className="text-decoration-none text-warning">Register</Link></p>
                     <hr className="border border-1 w-25 mx-auto" />
                     <div className="d-flex justify-content-around align-items-center mt-4">
                         <button className="login-with-btn" onClick={handleLogInWithGoogle}><span><i className="fab fa-google text-primary me-2"></i></span> Google</button>

@@ -17,21 +17,14 @@ const Header = () => {
                         <li className="nav-item">
                             <NavLink className="nav-link active text-dark fw-bold" aria-current="page" to="/home">Home</NavLink>
                         </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link text-dark fw-bold" to="/myOrders">My Orders</NavLink>
-                        </li>
+                        {
+                            user.email && <li className="nav-item">
+                                <NavLink className="nav-link text-dark fw-bold" to="/myOrders">My Orders</NavLink>
+                            </li>
+                        }
                         <li className="nav-item">
                             <NavLink className="nav-link text-dark fw-bold" to="/manages">Manages All</NavLink>
                         </li>
-                        {/* <li className="nav-item">
-                            <NavLink className="nav-link text-dark fw-bold" to="/experts">Experts</NavLink>
-                        </li> */}
-                        {/* <li className="nav-item">
-                            <NavLink className="nav-link text-dark fw-bold" to="/about">About</NavLink>
-                        </li> */}
-                        {/* <li className="nav-item">
-                            <NavLink className="nav-link text-dark fw-bold" to="/contact">Contact</NavLink>
-                        </li> */}
                         <li className="nav-item">
                             <NavLink className="nav-link text-dark fw-bold" to="/addService">Add Service</NavLink>
                         </li>
