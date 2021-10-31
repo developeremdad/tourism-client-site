@@ -18,16 +18,20 @@ const ManageOrders = () => {
     }
     return (
         <div>
-            <div className="bg-light p-5 my-4">
+            <div className="bg-light p-5 my-5">
                 {
-                    orders.map(order => (
-                        <ManageOrder
-                            order={order}
-                            key={order._id}
-                            handleCheckIsDelted={handleCheckIsDelted}
-                            updateStatus={updateStatus}
-                        />
-                    ))
+                    orders.length
+                        ?
+                        orders.map(order => (
+                            <ManageOrder
+                                order={order}
+                                key={order._id}
+                                handleCheckIsDelted={handleCheckIsDelted}
+                                updateStatus={updateStatus}
+                            />
+                        ))
+                        :
+                        <h2 className="text-center text-warning">Order Not Found</h2>
                 }
             </div>
         </div>

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './ManageOrder.css';
 
 const ManageOrder = (props) => {
     const { name, email, phone, price, status, _id } = props.order;
@@ -50,18 +51,18 @@ const ManageOrder = (props) => {
         }
     }
     return (
-        <div className="container mx-auto row g-4 border-bottom">
+        <div className="container mx-auto row manage-container py-3 shadow">
             <div className="col-lg-5 col-md-5 col-12">
-                <p>{name}</p>
-                <p>{email}</p>
+                <p className="text-primary fs-5"><span><i className="fas fa-plane-departure me-2 text-dark"></i></span>{name}</p>
+                <p><span><i className="fas fa-envelope me-2"></i></span>{email}</p>
             </div>
             <div className="col-lg-4 col-md-4 col-12">
-                <p><small>{phone}</small></p>
-                <p>${price}</p>
+                <p><small><span><i className="fas fa-phone-alt me-2"></i></span>{phone}</small></p>
+                <p className="text-danger fs-5"><span><i className="fas fa-dollar-sign me-2 text-dark"></i></span>${price}</p>
             </div>
-            <div className="col-lg-3 col-md-3 col-12">
-                <button onClick={() => handleUpdateStatus(_id)}>{status}</button>
-                <button onClick={() => handleCancelOrder(_id)}>Delete</button>
+            <div className="col-lg-3 col-md-3 col-12 d-flex align-items-center">
+                <button className="update-btn" onClick={() => handleUpdateStatus(_id)}>{status}</button>
+                <button className="delete-btn" onClick={() => handleCancelOrder(_id)}><span><i className="fas fa-times"></i></span></button>
             </div>
         </div >
     );

@@ -10,10 +10,12 @@ const Home = () => {
     return (
         <div>
             <BannerSection />
+
+            {/* services section  */}
             <Services />
 
-            {/* add hotels  */}
-            <div className="hotel-container">
+            {/* add hotels section */}
+            <section className="hotel-container">
                 <div className="container text-center hotel-header">
                     <h1 className="mb-3">POPULAR HOTELS</h1>
                     <p>They provide the luxury of living in the heart of the city without compromising on the views.</p>
@@ -62,7 +64,67 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+            {/* end hotels section  */}
+
+            {/* start Featured Adventures section  */}
+
+            <section>
+                <div className="container my-5 py-5">
+                    <h2 className="my-4">Featured Adventures</h2>
+                    <div className="row row-cols-2 row-cols-lg-4 row-cols-md-3 row-cols-1 g-2 g-lg-3">
+                        <div className="col">
+                            <div className="bg-light p-2 border rounded">
+                                <h6 className="fw-bold">Sacred Kerala Tour</h6>
+                                <p>10 days from <del>$1,119</del><span className="text-danger"> $1,007</span></p>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="bg-light p-2 border rounded">
+                                <h6 className="fw-bold">Jewels of India</h6>
+                                <p>8 days from <del>$1,120</del><span className="text-danger"> $1,000</span></p>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="bg-light p-2 border rounded">
+                                <h6 className="fw-bold">Highlights of Scotland</h6>
+                                <p>10 days from <span className="text-danger"> $1,150</span></p>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="bg-light p-2 border rounded">
+                                <h6 className="fw-bold">Galapagos Land</h6>
+                                <p>12 days from <del>$1,825</del><span className="text-danger"> $1,550</span></p>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="bg-light p-2 border rounded">
+                                <h6 className="fw-bold">Best of Jordan</h6>
+                                <p>5 days from <del>$915</del><span className="text-danger"> $850</span></p>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="bg-light p-2 border rounded">
+                                <h6 className="fw-bold">5 Days Wonders</h6>
+                                <p>15 days from <del>$2,159</del><span className="text-danger"> $2,000</span></p>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="bg-light p-2 border rounded">
+                                <h6 className="fw-bold">Bay of Islands</h6>
+                                <p>30 days from <del>$3,780</del><span className="text-danger"> $3,510</span></p>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="bg-light p-2 border rounded">
+                                <h6 className="fw-bold">Sacred Kerala Tour</h6>
+                                <p>9 days from <del> $1,423</del><span className="text-danger"> $1,127</span></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
         </div>
     );
 };

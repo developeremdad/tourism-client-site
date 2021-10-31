@@ -22,13 +22,17 @@ const MyOrders = () => {
         <div className="bg-light p-5 my-4">
             <div className="container mx-auto row g-4">
                 {
-                    orders.map(order => (
-                        <MyOrder
-                            key={order._id}
-                            order={order}
-                            handleCheckIsDelted={handleCheckIsDelted}
-                        />
-                    ))
+                    orders.length
+                        ?
+                        orders.map(order => (
+                            <MyOrder
+                                key={order._id}
+                                order={order}
+                                handleCheckIsDelted={handleCheckIsDelted}
+                            />
+                        ))
+                        :
+                        <h2 className="text-center text-warning">Order Not Found</h2>
                 }
             </div>
         </div>

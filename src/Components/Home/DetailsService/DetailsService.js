@@ -8,7 +8,7 @@ import { Spinner } from 'react-bootstrap';
 const DetailsService = () => {
     const { user } = useAuth();
     const { email, displayName } = user;
-    const status = 'pending';
+    const status = 'Pending';
     const { serviceId } = useParams();
     const [service, setService] = useState({});
     const { img, name, description, place, price } = service;
