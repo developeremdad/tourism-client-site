@@ -49,7 +49,6 @@ const Footer = () => {
                     <div>
                         <span><i className="footer-icon fab fa-facebook-square"></i></span>
                         <span><i className="footer-icon fab fa-whatsapp-square"></i></span>
-                        <span><i className="footer-icon fab fa-twitter-square"></i></span>
                         <span><i className="footer-icon fab fa-instagram-square"></i></span>
                         <span><i className="footer-icon fab fa-youtube-square"></i></span>
                     </div>

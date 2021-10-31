@@ -27,7 +27,7 @@ const DetailsService = () => {
         const { phone, address, shipping, userName } = data;
         const orderInfo = { email, img, name, description, place, price, status, userName, phone, address, shipping };
         // console.log(orderInfo);
-        axios.post('http://sheltered-falls-76719.herokuapp.com/orders', orderInfo)
+        axios.post('https://sheltered-falls-76719.herokuapp.com/orders', orderInfo)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Order Successfully Added');
